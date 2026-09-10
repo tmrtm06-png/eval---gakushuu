@@ -12,17 +12,16 @@ for word in words:
     # dict 안에 단어가 없는 경우 word를 추가하고, 횟수를 + 1 카운트한다
     word_frequency[word] = word_frequency.get(word, 0) + 1
 
-# 빈도를 내림차순 tuple로 정렬
-sorted_frequency = sorted([(-count, key) for key, count in word_frequency.items()])
-
 # 빈도가 2회 이상인 단어와 그 횟수만 필터링
-duplicates = [(freq, word)for freq, word in sorted_frequency if abs(freq) >= 2 ]
+duplicates = sorted(
+    [(-count, word) for word, count in word_frequency.items() if count >= 2]
+)
 
 # 2회 이상만 필터링 한 튜플을 순회하며, 단어와 빈도를 출력
 # 빈도 리스트 유무 확인
 if duplicates:
-    for frequency, word_key in duplicates:
-        print(f"{word_key}: {-frequency}")
+    for neg_frequency, word_key in duplicates:
+        print(f"{word_key}: {-neg_frequency}")
 
 # 상기 코드에 걸리지 않은 경우, "중복 없음" 출력
 else:
