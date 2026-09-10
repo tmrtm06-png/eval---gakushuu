@@ -6,9 +6,7 @@ word_frequency = {}
 
 # 한 줄로 입력받은 단어를 순회
 for word in words:
-
-    if word == " ":  # word가 공백인 경우 건너뛴다
-        continue
+    
     # dict 안에 단어가 없는 경우 word를 추가하고, 횟수를 + 1 카운트한다
     word_frequency[word] = word_frequency.get(word, 0) + 1
 
