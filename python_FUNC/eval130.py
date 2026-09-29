@@ -16,4 +16,4 @@ print(rectangle_kw(**opts))
 
 # 피드백
 # def rectangle_kw(width: int, height: int) -> int:  
-# # 타입 힌트 추가로 의도를 명확하게 표현
+# 타입 힌트 추가로 의도를 명확하게 표현
