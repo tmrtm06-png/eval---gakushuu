@@ -19,5 +19,5 @@ public class Eval28 {
 
 // 피드백
 // 수학 공식으로 O(1) 계산: 1..n 중 k의 배수 개수 m = n/k, 합 = k * m * (m+1) / 2
-        int m = n / k;
-        int sumOfMultiples = k * m * (m + 1) / 2; // 등차수열 합 공식 활용
+        // int m = n / k;
+        // int sumOfMultiples = k * m * (m + 1) / 2; // 등차수열 합 공식 활용

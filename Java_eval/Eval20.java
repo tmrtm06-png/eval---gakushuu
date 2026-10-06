@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Eval20 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int inputNum;
@@ -20,5 +20,5 @@ public class Main {
 
 // 피드백
 // try-with-resources로 Scanner 자동 반납 (리소스 누수 방지)
-        try (Scanner sc = new Scanner(System.in)) {
-}
+//         try (Scanner sc = new Scanner(System.in)) {
+// }

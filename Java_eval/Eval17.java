@@ -10,8 +10,8 @@ public class Eval17 {
         int count = 0;
         
         // while문으로 10으로 나눠가며 자릿수 카운트
-        while (temp > 0) {
-            temp /= 10;
+        while (n_copy > 0) {
+            n_copy /= 10;
             count++;
         }
         
