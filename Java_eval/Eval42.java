@@ -7,7 +7,7 @@ public class Eval42 {
         int endYear = sc.nextInt();
         int leapYearCounter = 0;
 
-        // for 문으로 startYear ~ endYear의 범위만큼 반복하며
+        // for 문으로 startYear ~ endYear의 범위만큼 순회하며
         // 윤년인 경우만 카운터 +1씩 증가
         // 윤년 규칙 - 4의 배수이면서(&& 연산자) 100의 배수가 아닌 해, 또는(|| 연산자) 400의 배수인 해 
         for (int year = startYear; year <= endYear; year++) {
