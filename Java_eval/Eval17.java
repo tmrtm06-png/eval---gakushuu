@@ -16,6 +16,7 @@ public class Eval17 {
         }
         
         System.out.println(count + "자리");
+        sc.close();
     }
 }
 
