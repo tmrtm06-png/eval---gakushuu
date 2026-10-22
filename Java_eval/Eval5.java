@@ -16,5 +16,6 @@ public class Eval5 {
         } else if  (score >= 75) {
             System.out.println("기숙사 장학금");
         }
+        sc.close();
     }
 }
