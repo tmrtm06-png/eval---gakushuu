@@ -5,7 +5,7 @@ public class Eval81 {
         try (Scanner sc = new Scanner(System.in)) {
             int firstTerm = sc.nextInt();
             int ratio = sc.nextInt();
-            int n = sc.nextInt();
+            int termCount = sc.nextInt();
 
             // StringBuilder로 효율화
             StringBuilder sb = new StringBuilder();
@@ -14,7 +14,7 @@ public class Eval81 {
             long term = firstTerm;
 
             // n번 반복하며 첫 항 firstTerm부터 ratio씩 곱해가는 반복문
-            for (int i = 0; i < n; i++) {
+            for (int i = 0; i < termCount; i++) {
                 
                 // 첫 숫자를 제외한 모든 숫자의 앞에 공백 추가
                 if (i > 0) {
