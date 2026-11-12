@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Eval88 {
 
     // 0. 입력받은 시간과 분을 총 초수로 변환하기 위한 상수 선언
     private static final int TOTAL_HR_CONVERT = 3600;
